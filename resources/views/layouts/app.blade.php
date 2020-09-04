@@ -31,6 +31,7 @@
     </script>
     <script>Breakpoints({xs: {min:0,max:575},sm: {min:576,max:767},md: {min:768,max:991},lg: {min:992,max:1199},xl: {min:1200,max:Infinity}});</script>
     <body class="menubar-left menubar-dark dashboard dashboard-v1 menubar-open">
+        @dd(Auth::user()->information())
         <!--[if lt IE 10]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -43,10 +44,7 @@
                     <span class="hamburger-inner">
                     </span>
                 </span>
-                </button> <button type="button" class="navbar-toggler hidden-lg-up collapsed" data-toggle="navbar-search">
-                <span class="sr-only">Toggle navigation</span> <span class="zmdi zmdi-hc-lg zmdi-search">
-            </span>
-            </button> <button type="button" class="navbar-toggler hidden-lg-up collapsed" data-toggle="collapse" data-target="#site-navbar-collapse" aria-expanded="false">
+                </button><button type="button" class="navbar-toggler hidden-lg-up collapsed" data-toggle="collapse" data-target="#site-navbar-collapse" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span> <span class="zmdi zmdi-hc-lg zmdi-more">
         </span>
         </button>
@@ -105,81 +103,15 @@
                 </div>
                 <!-- /.media-list -->
             </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <i class="nav-icon fa fa-envelope-o">
-                    </i> <span class="badge badge-circle badge-success">3</span>
-                </a>
-                <div class="media-list dropdown-menu p-0" data-plugin="dropdownCaret"><span class="arrow" style="left: 15px; right: auto;"></span>
-                <div class="dropdown-item dropdown-menu-cap d-flex">
-                    <span class="mr-auto my-1">You Have 3 Unread Messages</span> <a href="#" class="btn btn-sm btn-light my-1">See all</a>
-                </div>
-                <div class="scroll-container ps-container ps-theme-default" data-ps-id="ea5c2659-dbec-b9e1-e5ff-749506b07af7">
-                    <a href="javascript:void(0)" class="media dropdown-item">
-                        <div class="avatar">
-                            <img src="{{ asset('assets/global/images/203.jpg') }}" alt=""> <span class="badge badge-success">5</span>
-                        </div>
-                        <div class="media-body">
-                            <h6 class="media-heading">Ahmed Gamal</h6>
-                            <small>Lorem ipsum dolor sit amet, Lorem ipsum dolor.</small>
-                        </div>
-                    </a>
-                    <a href="javascript:void(0)" class="media dropdown-item">
-                        <div class="avatar">
-                            <img src="{{ asset('assets/global/images/101.jpg') }}" alt=""> <span class="badge badge-success">9</span>
-                        </div>
-                        <div class="media-body">
-                            <h6 class="media-heading">Nick Pettit</h6>
-                            <small>Lorem ipsum dolor sit amet, Lorem ipsum dolor.</small>
-                        </div>
-                    </a>
-                    <a href="javascript:void(0)" class="media dropdown-item">
-                        <div class="avatar">
-                            <img src="{{ asset('assets/global/images/202.jpg') }}" alt=""> <span class="badge badge-success">1</span>
-                        </div>
-                        <div class="media-body">
-                            <h6 class="media-heading">Media heading</h6>
-                            <small>Lorem ipsum dolor sit amet, Lorem ipsum dolor.</small>
-                        </div>
-                    </a>
-                    <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 0px;"><div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps-scrollbar-y-rail" style="top: 0px; right: 0px;"><div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></div>
-                    <!-- /.scroll-container -->
-                </div>
-                <!-- /.media-list -->
-            </li>
-
 </ul>
 <ul class="navbar-nav">
-    <li class="nav-item">
-        <div id="navbar-search" class="navbar-search">
-            <form class="form-inline navbar-search-form">
-                <input class="form-control navbar-search-field" type="text" placeholder="Search"> <button type="submit" class="navbar-search-submit">
-                <svg class="svg-search-icon">
-                    <use xlink:href="{{ asset('assets/global/svg-sprite/sprite.svg#search') }}"></use>
-                </svg>
-                </button> <button class="navbar-search-close" data-toggle="navbar-search">
-                <i class="zmdi zmdi-close">
-                </i>
-                </button>
-            </form>
-            <div class="navbar-search-backdrop" data-toggle="navbar-search">
-            </div>
-        </div>
-        <!-- /.navbar-search -->
-    </li>
-    <li id="navbar-search-toggler" class="nav-item hidden-xl-up hidden-sm-down">
-        <a class="nav-link" href="#" data-toggle="navbar-search">
-            <span class="zmdi zmdi-hc-lg zmdi-search">
-            </span>
-        </a>
-    </li>
     <li class="nav-item dropdown">
         <a class="nav-link site-user dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <img class="nav-img" src="{{ asset('assets/global/images/user-img.png') }}" alt=""> <span class="nav-text hidden-sm-down ml-2"> {{ Auth::user()->uname }} </span> <i class="nav-caret hidden-sm-down zmdi zmdi-hc-sm zmdi-chevron-down">
             </i>
         </a>
         <div class="dropdown-menu dropdown-menu-right p-0" data-plugin="dropdownCaret"><span class="arrow" style="right: 45px; left: auto;"></span>
-        <a class="dropdown-item dropdown-menu-cap"> {{ Auth::user()->uname }} </a> <a class="dropdown-item" href="#">
+        <a class="dropdown-item dropdown-menu-cap"> {{ Auth::user()->information->name }} </a> <a class="dropdown-item" href="#">
         <i class="fa fa-user-o mr-3">
         </i> <span>My Profile</span> </a>
         <a class="dropdown-item" href="#">
@@ -722,12 +654,11 @@
             <main class="site-main">
                 <div class="site-content">
                     @yield('content')
-                    
                 </div>
                 <!-- /.site-content -->
                 <footer class="site-footer">
                     <div class="mr-auto">
-                        <p class="text-primary mb-0">Made By <a href="">Eduard Tovmasyan</a>
+                        <p class="text-primary mb-0"><a href=""></a>
                         </p>
                     </div>
                     <div>
@@ -804,5 +735,4 @@
     <script src="{{ asset('assets/examples/js/dashboards/dashboard.v1.js') }}">
     </script>
     <div class="jvectormap-tip"></div><div class="flotTip-with-arrow" style="display: none; position: absolute; left: 295px; top: 486px;"></div><div class="flotTip" style="display: none; position: absolute; background: rgb(255, 255, 255); z-index: 1040; padding: 0.4em 0.6em; border-radius: 0.5em; font-size: 0.8em; border: 1px solid rgb(17, 17, 17); white-space: nowrap;"></div>
-    
 </html>
