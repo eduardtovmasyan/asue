@@ -36,18 +36,8 @@
         <![endif]-->
         <nav class="site-navbar navbar fixed-top navbar-expand-lg navbar-light bg-blue">
             <div class="navbar-header">
-                <a class="navbar-brand" href="index.html">
-                    <svg class="flip-y" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 32 32">
-                    <path fill="currentColor" d="M30.063 2.585c-.253-1.023-.758-1.754-1.5-2.17-3.28-1.842-9.02 3.577-11.05 6.88-.65 1.06-1.275 2.358-1.792 3.718-1.486-.21-2.95-.098-4.366.337C6.954 12.694 4 16.975 4 22v2c0 4.337 3.663 8 8 8h1.98c5.31 0 9.803-3.664 10.682-8.714.33-1.89.142-3.807-.54-5.585 1.26-1.2 2.43-2.587 3.268-3.886 1.646-2.554 3.46-8.062 2.673-11.23zM12 23c-1.105 0-2-.895-2-2s.895-2 2-2 2 .895 2 2-.895 2-2 2z"></path>
-                <path data-color="color-2" fill="#52c03b" d="M10.77 9.437c1.14-.35 2.32-.527 3.506-.527h.148c.424-.954.888-1.846 1.37-2.633-1.106-2.466-2.56-4.72-4.01-5.71-.7-.477-1.387-.656-2.04-.528-.442.086-1.08.37-1.594 1.23C7 3.19 6.89 7.465 7.457 11.06c1-.7 2.108-1.255 3.312-1.623z"></path>
-                </svg> <span class="brand-name hidden-fold">Luxury</span> </a>
-                <a href="javascript:void(0)" class="hidden-md-down" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                        <g transform="translate(.5 .5)" fill="none" stroke-linecap="square" stroke-miterlimit="10">
-                        <path stroke="currentColor" d="M23 12c0-1.105-.895-2-2-2h-1.262c-.19-.732-.477-1.422-.852-2.058l.892-.892c.78-.78.78-2.047 0-2.828-.78-.78-2.047-.78-2.828 0l-.892.892c-.636-.375-1.326-.663-2.058-.852V3c0-1.104-.895-2-2-2s-2 .895-2 2v1.262c-.732.19-1.422.477-2.058.852l-.892-.892c-.78-.78-2.047-.78-2.828 0-.78.78-.78 2.047 0 2.828l.892.892C4.74 8.578 4.45 9.268 4.262 10H3c-1.104 0-2 .895-2 2s.895 2 2 2h1.262c.19.732.477 1.422.852 2.058l-.892.892c-.78.78-.78 2.047 0 2.828.78.78 2.047.78 2.828 0l.892-.892c.635.375 1.326.663 2.058.852V21c0 1.104.895 2 2 2s2-.895 2-2v-1.262c.732-.19 1.422-.477 2.058-.852l.892.892c.78.78 2.047.78 2.828 0 .78-.78.78-2.047 0-2.828l-.892-.892c.375-.635.663-1.326.852-2.058H21c1.104 0 2-.895 2-2z"></path>
-                        <circle data-color="color-2" stroke="#52c03b" cx="12" cy="12" r="3"></circle>
-                    </g>
-                </svg> </a>
+                <a class="navbar-brand" href="{{ url('home') }}">
+                    <span class="brand-name hidden-fold">Luxury</span> </a>
                 <button data-toggle="menubar" class="mr-auto hidden-lg-up hamburger hamburger--collapse js-hamburger is-active" type="button">
                 <span class="hamburger-box">
                     <span class="hamburger-inner">
@@ -157,133 +147,7 @@
                 </div>
                 <!-- /.media-list -->
             </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <img class="nav-img" src="{{ asset('assets/global/images/flags/United-States-of-America.png') }}" alt=""> <span class="nav-text hidden-sm-down ml-2">English</span> <i class="nav-caret hidden-sm-down zmdi zmdi-hc-sm zmdi-chevron-down">
-                    </i>
-                </a>
-                <div class="dropdown-menu p-0" data-plugin="dropdownCaret"><span class="arrow" style="left: 48px; right: auto;"></span>
-                <a class="dropdown-item dropdown-menu-cap">4 Languages</a> <a class="dropdown-item" href="#">
-                <img src="{{ asset('assets/global/images/flags/Egypt.png') }}" class="mr-3 dropdown-item-icon" alt=""> <span>Arabic</span> </a>
-                <a class="dropdown-item" href="#">
-                    <img src="{{ asset('assets/global/images/flags/United-States-of-America.png') }}" class="mr-3 dropdown-item-icon" alt=""> <span>English</span> </a>
-                    <a class="dropdown-item" href="#">
-                        <img src="{{ asset('assets/global/images/flags/Spain.png') }}" class="mr-3 dropdown-item-icon" alt=""> <span>Spanish</span>
-                    </a>
-                </div>
-            </li>
-            <li class="nav-item dropdown mega-dropdown">
-                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <span class="nav-text">Media</span> <i class="nav-caret zmdi zmdi-hc-sm zmdi-chevron-down">
-                    </i>
-                </a>
-                <div class="dropdown-menu mega-dropdown-menu p-0">
-                    <div class="scroll-container ps-container ps-theme-default" data-ps-id="2ece1ad3-9093-ea7f-5c33-792d0c573683">
-                        <div class="mega-menu">
-                            <div class="mega-menu-section">
-                                <h6 class="mb-3">Featured Courses</h6>
-                                <div class="mega-links-list">
-                                    <a href="#">Bootstrap</a> <a href="#">SASS Basics</a> <a href="#">HTML &amp; CSS</a> <a href="#">PHP For Beginners</a> <a href="#">SASS Best Practices</a> <a href="#">Javascript Intermediate</a>
-                                </div>
-                            </div>
-                            <!-- /.mega-menu-section -->
-                            <div class="mega-menu-section">
-                                <div class="g__item mb-3">
-                                    <figure class="g__figure">
-                                        <a href="#">
-                                            <img class="img-fluid" src="https://themes.tielabs.com/sahifa/wp-content/uploads/sites/3/2015/01/1806717289_6e97fe91c9_b-660x330.jpg" alt="">
-                                        </a>
-                                        <figcaption class="g__overlay">
-                                        <i class="g__zoom fa fa-film fa-2x">
-                                        </i>
-                                        </figcaption>
-                                    </figure>
-                                </div>
-                                <h6>Featured Video</h6>
-                                <span>
-                                    <i class="zmdi zmdi-time">
-                                </i> Jan 25, 2017</span>
-                            </div>
-                            <!-- /.mega-menu-section -->
-                            <div class="mega-menu-section">
-                                <div class="mega-media-list">
-                                    <div class="media mb-3">
-                                        <div class="g__item mr-3 mb-0">
-                                            <figure class="g__figure">
-                                                <a href="#">
-                                                    <img src="{{ asset('assets/global/images/blog-img-11.jpg') }}" alt="">
-                                                </a>
-                                                <figcaption class="g__overlay">
-                                                <i class="g__zoom fa fa-image fa-2x">
-                                                </i>
-                                                </figcaption>
-                                            </figure>
-                                        </div>
-                                        <div class="media-body">
-                                            <h6 class="media-heading">
-                                            <a href="#">Your Guide To PHP</a>
-                                            </h6>
-                                            <span>This is an excerpt</span> <span>
-                                            <i class="zmdi zmdi-time">
-                                        </i> Apr 14, 2016</span>
-                                    </div>
-                                </div>
-                                <!-- /.media -->
-                                <div class="media mb-3">
-                                    <div class="g__item mr-3 mb-0">
-                                        <figure class="g__figure">
-                                            <a href="#">
-                                                <img src="{{ asset('assets/global/images/blog-img-12.jpg') }}" alt="">
-                                            </a>
-                                            <figcaption class="g__overlay">
-                                            <i class="g__zoom fa fa-image fa-2x">
-                                            </i>
-                                            </figcaption>
-                                        </figure>
-                                    </div>
-                                    <div class="media-body">
-                                        <h6 class="media-heading">
-                                        <a href="#">Javascript Weird Parts</a>
-                                        </h6>
-                                        <span>This is an excerpt of the post</span> <span>
-                                        <i class="zmdi zmdi-time">
-                                    </i> May 15, 2016</span>
-                                </div>
-                            </div>
-                            <!-- /.media -->
-                            <div class="media">
-                                <div class="g__item mr-3 mb-0">
-                                    <figure class="g__figure">
-                                        <a href="#">
-                                            <img src="{{ asset('assets/global/images/blog-img-13.jpg') }}" alt="">
-                                        </a>
-                                        <figcaption class="g__overlay">
-                                        <i class="g__zoom fa fa-image fa-2x">
-                                        </i>
-                                        </figcaption>
-                                    </figure>
-                                </div>
-                                <div class="media-body">
-                                    <h6 class="media-heading">
-                                    <a href="#">Bootstrap 4 Is Here</a>
-                                    </h6>
-                                    <span>This is an excerpt of the post</span> <span>
-                                    <i class="zmdi zmdi-time">
-                                </i> Jan 25, 2016</span>
-                            </div>
-                        </div>
-                        <!-- /.media -->
-                    </div>
-                    <!-- /.mega-media-list -->
-                </div>
-                <!-- /.mega-menu-section -->
-            </div>
-            <!-- /.mega-menu -->
-            <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 0px;"><div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps-scrollbar-y-rail" style="top: 0px; right: 0px;"><div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></div>
-            <!-- /.scroll-container -->
-        </div>
-        <!-- /.dropdown-menu -->
-    </li>
+
 </ul>
 <ul class="navbar-nav">
     <li class="nav-item">
@@ -592,91 +456,7 @@
             <!-- /.side-panel-tabs -->
         </aside>
         <!-- /.side-panel -->
-        <header class="site-header">
-            <div class="jumbotron jumbotron-fluid">
-                <div class="jumbotron-text">
-                    <h4 class="text-primary">Welcome To Luxury</h4>
-                    <small class="font-italic text-muted">Bootstrap 4 Web App Kit</small>
-                </div>
-                <!-- /.jumbotron-text -->
-                <div class="jumbotron-charts">
-                    <div class="item">
-                        <div class="mr-3">
-                            <small class="d-block mb-1">STORE INCOME</small> <svg class="svg-euro-icon mr-1">
-                                <use xlink:href="{{ asset('assets/global/svg-sprite/sprite.svg#euro') }}"></use>
-                            </svg> <strong data-plugin="counterUp">6950</strong>
-                        </div>
-                        <div>
-                            <div class="jumbotron-chart mt-2" id="jumbotron_chart_1"><canvas width="58" height="30" style="display: inline-block; width: 58px; height: 30px; vertical-align: top;"></canvas></div>
-                        </div>
-                    </div>
-                    <!-- /.item -->
-                    <div class="item">
-                        <div class="mr-3">
-                            <small class="d-block mb-1">ORDERS</small> <svg class="svg-caret-icon mr-1">
-                                <use xlink:href="{{ asset('assets/global/svg-sprite/sprite.svg#caret') }}"></use>
-                            </svg> <strong data-plugin="counterUp">7639</strong>
-                        </div>
-                        <div>
-                            <div class="jumbotron-chart mt-2" id="jumbotron_chart_2"><canvas width="58" height="30" style="display: inline-block; width: 58px; height: 30px; vertical-align: top;"></canvas></div>
-                        </div>
-                    </div>
-                    <!-- /.item -->
-                    <div class="item">
-                        <div class="mr-3">
-                            <small class="d-block mb-1">SITE TRAFFIC</small> <svg class="svg-arrows-up-down-icon mr-1">
-                                <use xlink:href="{{ asset('assets/global/svg-sprite/sprite.svg#arrows-up-down') }}"></use>
-                            </svg> <strong data-plugin="counterUp">5673</strong>
-                        </div>
-                        <div>
-                            <div class="jumbotron-chart mt-2" id="jumbotron_chart_3"><canvas width="58" height="30" style="display: inline-block; width: 58px; height: 30px; vertical-align: top;"></canvas></div>
-                        </div>
-                    </div>
-                    <!-- /.item -->
-                </div>
-                <!-- /.jumbotron-charts -->
-            </div>
-            <!-- /.jumbotron -->
-            <div class="breadcrumb">
-                <ol class="breadcrumb-tree">
-                    <li class="breadcrumb-item">
-                        <a href="#">
-                            <span class="zmdi zmdi-home mr-1">
-                                </span> <span>Home</span>
-                            </a>
-                        </li>
-                        <li class="breadcrumb-item active">
-                            <a href="#">Luxury</a>
-                        </li>
-                    </ol>
-                    <ul class="breadcrumb-btns">
-                        <li class="dropdown">
-                            <a href="#" class="btn btn-sm btn-scondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="zmdi zmdi-settings mr-1 text-success">
-                                </i> <span class="mr-1">Settings</span> <i class="zmdi zmdi-chevron-down">
-                                </i>
-                            </a>
-                            <div class="dropdown-menu p-0 mt-1" data-plugin="dropdownCaret"><span class="arrow" style="left: 34px; right: auto;"></span>
-                            <a class="dropdown-item dropdown-menu-cap">Your Settings</a> <a class="dropdown-item" href="#">Edit Profile</a> <a class="dropdown-item" href="#">Privacy Settings</a> <a class="dropdown-item" href="#">Secuirty Settings</a>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="#" class="btn btn-sm btn-scondary">
-                            <i class="zmdi zmdi-headset-mic mr-1 text-success">
-                            </i> <span>Support</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="btn btn-sm btn-scondary">
-                            <i class="zmdi zmdi-plus mr-1 text-success">
-                            </i> <span>Add</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.breadcrumb -->
-        </header>
-        <!-- /.site-header -->
+
         <div class="site-wrapper">
             <aside class="site-menubar">
                 <div class="site-menubar-inner">
@@ -933,113 +713,6 @@
                                 </i> <span class="menu-text">Projects</span>
                             </a>
                         </li>
-                        <!-- DATA SECTION -->
-                        <li class="menu-section-heading">DATA</li>
-                        <li>
-                            <a href="javascript:void(0)" class="submenu-toggle">
-                                <i class="menu-icon zmdi zmdi-chart zmdi-hc-lg">
-                                </i> <span class="menu-text">Charts</span> <i class="menu-caret zmdi zmdi-hc-sm zmdi-chevron-right">
-                                </i>
-                            </a>
-                            <ul class="submenu">
-                                <li>
-                                    <a href="charts.echarts.html">
-                                        <span class="menu-text">Echarts</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="charts.flot.html">
-                                        <span class="menu-text">Flot Cahrts</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="charts.chartist.html">
-                                        <span class="menu-text">Chartist.js</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="charts.morris.html">
-                                        <span class="menu-text">Morris Cahrts</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="charts.chartjs.html">
-                                        <span class="menu-text">Chart.js</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)" class="submenu-toggle">
-                                <i class="menu-icon zmdi zmdi-check-all zmdi-hc-lg">
-                                </i> <span class="menu-text">Forms</span> <i class="menu-caret zmdi zmdi-hc-sm zmdi-chevron-right">
-                                </i>
-                            </a>
-                            <ul class="submenu">
-                                <li>
-                                    <a href="form.wizard.html">
-                                        <span class="menu-text">Wizard</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="form.validation.html">
-                                        <span class="menu-text">Form Validation</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="form.fileupload.html">
-                                        <span class="menu-text">File Upload</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="form.custom.html">
-                                        <span class="menu-text">Custom Elements</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="form.datetime.html">
-                                        <span class="menu-text">Date &amp; Time</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="form.wysiwyg-editor.html">
-                                        <span class="menu-text">Summernote Editor</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="form.bs.html">
-                                        <span class="menu-text">Bootstrap Forms</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)" class="submenu-toggle">
-                                <i class="menu-icon zmdi zmdi-storage zmdi-hc-lg">
-                                </i> <span class="menu-text">Tables</span> <i class="menu-caret zmdi zmdi-hc-sm zmdi-chevron-right">
-                                </i>
-                            </a>
-                            <ul class="submenu">
-                                <li>
-                                    <a href="table.bs.html">
-                                        <span class="menu-text">Bootstrap Tables</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="table.datatables.html">
-                                        <span class="menu-text">DataTables</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <!-- OTHER SECTION -->
-                        <li class="menu-section-heading">OTHER</li>
-                        <li>
-                            <a href="documentation.html">
-                                <i class="menu-icon zmdi zmdi-file-text zmdi-hc-lg">
-                                </i> <span class="menu-text">Documentation</span>
-                            </a>
-                        </li>
                     </ul>
                     <!-- /.site-menu -->
                 </div>
@@ -1054,12 +727,11 @@
                 <!-- /.site-content -->
                 <footer class="site-footer">
                     <div class="mr-auto">
-                        <p class="text-primary mb-0">Made With <i class="fa fa-heart text-success">
-                            </i> By <a href="http://spantags.com/luxury/">SpanTags</a>
+                        <p class="text-primary mb-0">Made By <a href="">Eduard Tovmasyan</a>
                         </p>
                     </div>
                     <div>
-                        <a href="https://themeforest.net/item/luxury-responsive-bootstrap-4-admin-template/20881509">Purchase Luxury</a>
+                        <a href=""></a>
                     </div>
                 </footer>
                 <!-- /.site-footer -->
