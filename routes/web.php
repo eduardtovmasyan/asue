@@ -13,14 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/reg', function () {
-    return view('auth.signin');
+Route::group(['middleware' => ['logouted']], function() {
+    Route::get('/','LoginController@showLoginPage');
+    Route::post('/sign-in','LoginController@signIn')->name('sign-in');
 });
 
 Auth::routes();
-
 Route::get('/home', 'HomeController@index')->name('home');
+// Route::group(['middleware' => ['auth']], function() {
+    
+// });z

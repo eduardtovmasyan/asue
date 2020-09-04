@@ -37,9 +37,6 @@
                     <h5 class="text-white m-0">Luxury</h5>
                 </a>
             </div>
-            <div id="form-switch-btns" class="btn-group switch-btns">
-                <button data-target="#signup-form-wrap" class="btn">Sign up</button> <button data-target="#signin-form-wrap" class="btn" disabled="disabled">Sign in</button>
-            </div>
         </header>
         <!-- /.login-page-header -->
         <div class="login-page-wrap">
@@ -67,39 +64,24 @@
             <div class="side second-side">
                 <div class="side-content">
                     <div id="signin-form-wrap" class="form-wrap show">
-                        <h4 class="my-5 font-weight-light text-uppercase">Sing In to benefit from our services</h4>
-                        <form id="signin-form" class="form" method="POST" action="{{ route('login') }}">
+                        <h4 class="my-5 font-weight-light text-uppercase">Sign In</h4>
+                        <form id="signin-form" class="form" method="POST" action="{{ route('sign-in') }}">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Your username" name="email">
+                                @if($errors->first('email'))
+                                <span class="alert alert-danger display-hide">{{ $errors->first('email') }}</span><br>
+                                @endif
+                                <input type="text" class="form-control" placeholder="Your username" name="email" value="{{old('email')}}">
                             </div>
                             <div class="form-group">
-                                <input type="password" class="form-control" placeholder="Your password" name="pass">
+                                @if($errors->first('password'))
+                                <span class="alert alert-danger display-hide">{{ $errors->first('password') }}</span><br>
+                                @endif
+                                <input type="password" class="form-control" placeholder="Your password" name="password">
                             </div>
                             <input type="submit" class="btn btn-outline-success py-2 mt-5" style="width: 200px" value="Sign in">
-                            {{csrf_field()}}
+                            {{ csrf_field() }}
                         </form>
                     </div>
-                    <!-- /#signin-form-wrap -->
-                    <div id="signup-form-wrap" class="form-wrap">
-                        <h4 class="my-5 font-weight-light text-uppercase">Sing Up to benefit from our services</h4>
-                        <form id="signup-form" class="form" action="#">
-                            <div class="form-group">
-                                <input type="email" class="form-control" placeholder="Email">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Username">
-                            </div>
-                            <div class="form-group">
-                                <input type="password" class="form-control" placeholder="Password">
-                            </div>
-                            <div class="form-group">
-                                <input type="password" class="form-control" placeholder="Confirm password">
-                            </div>
-                            <input type="submit" class="btn btn-outline-success py-2 mt-5" style="width: 200px" value="Sign up">
-                            {{csrf_field()}}
-                        </form>
-                    </div>
-                    <!-- /#signin-form-wrap -->
                 </div>
                 <!-- /.side-content -->
             </div>

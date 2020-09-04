@@ -232,6 +232,6 @@ return [
         /*
          * My Facades...
          */
-        // 'Users' => App\Facades\LmsUser::class,
+        'Users' => App\Facades\LmsUser::class,
     ],
 ];
