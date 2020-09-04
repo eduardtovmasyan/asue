@@ -2,7 +2,7 @@
 <html lang="en">
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Luxury</title>
+    <title>Home</title>
     <meta name="description" content="Luxury is a premium adman dashboard template based on bootstrap">
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -1067,121 +1067,6 @@
             <!-- /.site-main -->
         </div>
         <!-- /.site-wrapper -->
-        <!-- theme customizer -->
-        <div id="theme-customizer">
-            <header class="p-4">
-                <a href="https://themeforest.net/item/luxury-responsive-bootstrap-4-admin-template/20881509" class="btn btn-block btn-lg btn-primary fz-base">BUY Luxury NOW!</a>
-                <hr>
-                <div class="d-flex justify-content-between customizer-action-btns">
-                    <button id="customizerResetButton" class="btn btn-outline-danger">Reset</button> <button id="customizerSaveButton" class="btn btn-outline-success">Save</button>
-                </div>
-            </header>
-            <div class="theme-customizer-body">
-                <ul class="nav nav-tabs" role="tablist">
-                    <li class="nav-item">
-                        <a class="nav-link active" id="navbar-tab" data-toggle="tab" href="#navbar" role="tab" aria-controls="navbar" aria-expanded="true">Navbar</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="menubar-tab" data-toggle="tab" href="#menubar" role="tab" aria-controls="menubar" aria-expanded="true">Menubar</a>
-                    </li>
-                </ul>
-                <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane p-4 fade show active" id="navbar" role="tabpanel" aria-labelledby="navbar-tab">
-                        <div>
-                            <input id="navbarDark" data-toggle="navbarDark" type="checkbox" data-plugin="switchery" data-size="small" data-switchery="true" style="display: none;"><span class="switchery switchery-small" style="box-shadow: rgb(223, 223, 223) 0px 0px 0px 0px inset; border-color: rgb(223, 223, 223); background-color: rgb(255, 255, 255); transition: border 0.4s ease 0s, box-shadow 0.4s ease 0s;"><small style="left: 0px; transition: background-color 0.4s ease 0s, left 0.2s ease 0s;"></small></span>
-                            <label for="navbarDark" class="ml-3">Navbar Dark</label>
-                        </div>
-                        <hr>
-                        <h6 class="mb-4">Navbar Skin</h6>
-                        <div class="mb-3">
-                            <div class="radio radio-indigo">
-                                <input type="radio" id="nb-skin-2" name="navbar-skin-option" data-toggle="navbarSkin" data-skin="bg-indigo">
-                                <label for="nb-skin-2">Indigo</label>
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <div class="radio radio-blue">
-                                <input type="radio" id="nb-skin-4" name="navbar-skin-option" data-toggle="navbarSkin" data-skin="bg-blue">
-                                <label for="nb-skin-4">Blue</label>
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <div class="radio radio-cyan">
-                                <input type="radio" id="nb-skin-6" name="navbar-skin-option" data-toggle="navbarSkin" data-skin="bg-cyan">
-                                <label for="nb-skin-6">Cyan</label>
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <div class="radio radio-orange">
-                                <input type="radio" id="nb-skin-5" name="navbar-skin-option" data-toggle="navbarSkin" data-skin="bg-orange">
-                                <label for="nb-skin-5">Orange</label>
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <div class="radio radio-red">
-                                <input type="radio" id="nb-skin-7" name="navbar-skin-option" data-toggle="navbarSkin" data-skin="bg-red">
-                                <label for="nb-skin-7">Red</label>
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <div class="radio radio-pink">
-                                <input type="radio" id="nb-skin-13" name="navbar-skin-option" data-toggle="navbarSkin" data-skin="bg-pink">
-                                <label for="nb-skin-13">Pink</label>
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <div class="radio radio-purple">
-                                <input type="radio" id="nb-skin-12" name="navbar-skin-option" data-toggle="navbarSkin" data-skin="bg-purple">
-                                <label for="nb-skin-12">Purple</label>
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <div class="radio radio-green">
-                                <input type="radio" id="nb-skin-8" name="navbar-skin-option" data-toggle="navbarSkin" data-skin="bg-green">
-                                <label for="nb-skin-8">Green</label>
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <div class="radio radio-teal">
-                                <input type="radio" id="nb-skin-9" name="navbar-skin-option" data-toggle="navbarSkin" data-skin="bg-teal">
-                                <label for="nb-skin-9">Teal</label>
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <div class="radio radio-brown">
-                                <input type="radio" id="nb-skin-10" name="navbar-skin-option" data-toggle="navbarSkin" data-skin="bg-brown">
-                                <label for="nb-skin-10">Brown</label>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="radio radio-gray">
-                                <input type="radio" id="nb-skin-11" name="navbar-skin-option" data-toggle="navbarSkin" data-skin="bg-gray">
-                                <label for="nb-skin-11">Gray</label>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.tab-pane -->
-                    <div class="tab-pane fade p-4" id="menubar" role="tabpanel" aria-labelledby="menubar-tab">
-                        <div>
-                            <input id="menubarDark" data-toggle="menubarDark" type="checkbox" data-plugin="switchery" data-size="small" data-switchery="true" style="display: none;"><span class="switchery switchery-small" style="background-color: rgb(24, 138, 226); border-color: rgb(24, 138, 226); box-shadow: rgb(24, 138, 226) 0px 0px 0px 0px inset; transition: border 0.4s ease 0s, box-shadow 0.4s ease 0s, background-color 1.2s ease 0s;"><small style="left: 13px; background-color: rgb(255, 255, 255); transition: background-color 0.4s ease 0s, left 0.2s ease 0s;"></small></span>
-                            <label for="menubarDark" class="ml-3">Menubar Dark</label>
-                        </div>
-                        <hr>
-                        <div id="menubar-fold-wrap" class="hidden-top hidden-sm-down">
-                            <input id="menubarFold" data-toggle="menubarFold" type="checkbox" data-plugin="switchery" data-size="small" data-switchery="true" style="display: none;"><span class="switchery switchery-small" style="box-shadow: rgb(223, 223, 223) 0px 0px 0px 0px inset; border-color: rgb(223, 223, 223); background-color: rgb(255, 255, 255); transition: border 0.4s ease 0s, box-shadow 0.4s ease 0s;"><small style="left: 0px; transition: background-color 0.4s ease 0s, left 0.2s ease 0s;"></small></span>
-                            <label for="menubarFold" class="ml-3">Menubar Folded</label>
-                        </div>
-                    </div>
-                    <!-- /.tab-pane -->
-                </div>
-                <!-- /.tab-content -->
-                <div id="theme-customizer-toggler" data-toggle="class" data-target="#theme-customizer" data-class="show">
-                    <i class="fa fa-gear fa-2x">
-                    </i>
-                </div>
-            </div>
-            <!-- /.theme-customizer-body -->
-        </div>
     </body>
     <!-- /.theme-customizer -->
     <!-- core plugins -->

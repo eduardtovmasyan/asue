@@ -18,11 +18,9 @@ class LoginService
     public function logIn($request)
     {
         $user = $this->userModel::where('email', $request->email)->first();
-dd($user);
+
         if (isset($user)) {
-            dd(Hash::check($request->password, $user->pass));
-            
-            if (Hash::check($request->password, $user->pass)) {
+            if ($this->userModel->where('email', $request->email)->where('pass', '=', hash('sha256', $request->password))->first()) {
                 Auth::login($user);
 
                 return true;
