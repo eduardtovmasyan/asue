@@ -19,7 +19,8 @@ Route::group(['middleware' => ['logouted']], function() {
 });
 
 Auth::routes();
-Route::get('/home', 'HomeController@index')->name('home');
-// Route::group(['middleware' => ['auth']], function() {
-    
-// });z
+Route::group(['middleware' => ['auth']], function() {
+    Route::get('/home', 'HomeController@index')->name('home');
+    Route::get('/profile', 'ProfileController@showProfilePage')->name('profile');
+});
+

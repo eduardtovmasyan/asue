@@ -24,6 +24,6 @@ class User extends Authenticatable
 
     public function information()
     {
-        return $this->hasOne(Student::class, 'uname', 'stud_id');
+        return $this->hasOne(Student::class,  'stud_id', 'uname');
     }
 }
