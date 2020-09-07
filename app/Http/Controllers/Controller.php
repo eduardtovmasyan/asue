@@ -10,4 +10,12 @@ use Illuminate\Routing\Controller as BaseController;
 class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
+
+    const WEEK_DAYS = [
+        'Երկուշաբթի',
+        'Երեքշաբթի',
+        'Չորեքշաբթի',
+        'Հինգշաբթի',
+        'ՈՒրբաթ',
+    ];
 }

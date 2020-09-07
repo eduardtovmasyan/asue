@@ -400,12 +400,6 @@
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="search.html">
-                                                <i class="menu-icon zmdi zmdi-search zmdi-hc-lg">
-                                                </i> <span class="menu-text">Search</span>
-                                            </a>
-                                        </li>
-                                        <li>
                                             <a href="javascript:void(0)" class="submenu-toggle">
                                                 <i class="menu-icon zmdi zmdi-pages zmdi-hc-lg">
                                                 </i> <span class="menu-text">Pages</span> <i class="menu-caret zmdi zmdi-hc-sm zmdi-chevron-right">
