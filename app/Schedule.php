@@ -13,4 +13,14 @@ class Schedule extends Model
     {
         return $this->hasOne(Lecturer::class, 'user_id', 'dasaxos');
     }
+
+    public function teachRoom()
+    {
+        return $this->hasOne(TeachRoom::class, 'id', 'room');
+    }
+
+    public function subject()
+    {
+        return $this->hasOne(Subject::class, 'id', 'ararka');
+    }
 }
