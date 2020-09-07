@@ -20,7 +20,7 @@
             <td>{{ $info['course'] }}</td>
             <td>{{ $info['himq'] }}</td>
             <td>{{ $info['hraman'] }}</td>
-            <td>{{ $info['status'] }}</td>
+            <td>{{ $info['statusName'] }}</td>
         </tr>
         @endforeach
     </tbody>
