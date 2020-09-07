@@ -14,12 +14,12 @@ class Student extends Model
         return $this->belongsTo(User::class, 'uname', 'stud_id');
     }
 
-    public function faculty()
+    public function studentFaculty()
     {
         return $this->hasOne(Faculty::class, 'FacultetID', 'facultet_id');
     }
 
-    public function course()
+    public function studentCourse()
     {
         return $this->hasOne(Course::class, 'stud_id', 'stud_id');
     }

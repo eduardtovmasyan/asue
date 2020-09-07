@@ -400,6 +400,12 @@
                                             </a>
                                         </li>
                                         <li>
+                                            <a href="{{ url('academic-info') }}">
+                                                <i class="menu-icon fa fa-info-circle"></i>
+                                                <span class="menu-text">Academic Information</span>
+                                            </a>
+                                        </li>
+                                        <li>
                                             <a href="javascript:void(0)" class="submenu-toggle">
                                                 <i class="menu-icon zmdi zmdi-pages zmdi-hc-lg">
                                                 </i> <span class="menu-text">Pages</span> <i class="menu-caret zmdi zmdi-hc-sm zmdi-chevron-right">

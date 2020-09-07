@@ -233,5 +233,6 @@ return [
          * My Facades...
          */
         'Users' => App\Facades\LmsUser::class,
+        'AcademicInfo' => App\Facades\AcademicInfo::class,
     ],
 ];

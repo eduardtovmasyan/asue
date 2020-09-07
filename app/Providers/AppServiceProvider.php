@@ -14,6 +14,7 @@ class AppServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->bind('user', 'App\Services\LoginService');
+        $this->app->bind('academicInfo', 'App\Services\AcademicInfoService');
     }
 
     /**
