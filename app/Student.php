@@ -13,4 +13,9 @@ class Student extends Model
     {
         return $this->belongsTo(User::class, 'uname', 'stud_id');
     }
+
+    public function faculty()
+    {
+        return $this->hasOne(Faculty::class, 'FacultetID', 'facultet_id');
+    }
 }

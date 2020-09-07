@@ -18,9 +18,8 @@ Route::group(['middleware' => ['logouted']], function() {
     Route::post('/sign-in','LoginController@signIn')->name('sign-in');
 });
 
-Auth::routes();
+Auth::routes(['login' => false, 'register' => false]);
 Route::group(['middleware' => ['auth']], function() {
     Route::get('/home', 'HomeController@index')->name('home');
     Route::get('/profile', 'ProfileController@showProfilePage')->name('profile');
 });
-

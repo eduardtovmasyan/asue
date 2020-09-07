@@ -67,24 +67,14 @@
                         <a class="dropdown-item dropdown-menu-cap"> {{ Auth::user()->information->name }} {{ Auth::user()->information->surname }} </a> 
                         <a class="dropdown-item" href="{{ url('profile') }}">
                         <i class="fa fa-user-o mr-3">
-                        </i> <span>My Profile</span> </a>
-                        <a class="dropdown-item" href="#">
-                            <i class="fa fa-list-ul mr-3">
-                            </i> <span>My Tasks</span> </a>
-                            <a class="dropdown-item" href="#">
-                                <i class="fa fa-envelope-o mr-3">
-                                </i> <span>My Inbox</span>
-                            </a>
+                        </i> <span>Անձնական էջ</span> </a>
                             <div class="dropdown-divider">
                             </div>
-                            <a class="dropdown-item" href="#">
-                                <i class="fa fa-file-o mr-3">
-                                </i> <span>Lock Screen</span> </a>
                                 <a class="dropdown-item" href="{{ route('logout') }}"
                                     onclick="event.preventDefault();
                                     document.getElementById('logout-form').submit();">
                                     <i class="fa fa-power-off mr-3">
-                                    </i> <span>Logout</span>
+                                    </i> <span>Ելք</span>
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="{{ route('logout') }}"
