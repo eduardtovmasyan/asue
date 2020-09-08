@@ -12,17 +12,17 @@ $(document).on('change', '#doc', function() {
         },
         success: function(r) {
             $('.doc').after(`
-            <div class="docTypes">
-                <label for="docTypes">Փաստաթուղթ</label>
-                <select class="form-control" id="docTypes">
-                    <option disabled="" muted selected>Փաստաթուղթ</option>
-                </select>
-            </div>
-            <div class="textarea mt-4">
-            <label for="textarea ">Example textarea</label>
-            <textarea class="form-control" id="textarea" rows="3"></textarea>
-            </div>
-            <button class="btn btn-primary mt-4" type="submit">Submit</button>
+                <div class="docTypes">
+                    <label for="docTypes">Փաստաթուղթ</label>
+                    <select class="form-control" id="docTypes">
+                        <option disabled="" muted selected>Փաստաթուղթ</option>
+                    </select>
+                </div>
+                <div class="textarea mt-4">
+                    <label for="textarea ">Example textarea</label>
+                    <textarea class="form-control" id="textarea" rows="3"></textarea>
+                </div>
+                <button class="btn btn-primary mt-4" type="submit" id="sendButton">Ուղարկել</button>
             `)
             let type = $('.docTypes').find('#docTypes')
 
@@ -31,6 +31,25 @@ $(document).on('change', '#doc', function() {
                     <option value="${item.id}">${item.name}</option>
                 `)
             })
+        }
+    });
+});
+
+$(document).on('click', '#sendButton', function() {
+    let docType_id = $('#docTypes').val()
+    let description = $('#textarea').val()
+
+    $.ajax({
+        type: 'post',
+        url: `/student-application/send`,
+        data: {
+            '_token': token,
+            'docType_id': docType_id,
+            'description': description,
+        },
+        success: function(r) {
+            swal("Good job!", "You clicked the button!", "success");
+            $(location).attr('href', '/home');
         }
     });
 });

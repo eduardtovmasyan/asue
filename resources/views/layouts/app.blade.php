@@ -678,6 +678,7 @@
                     <input type="hidden" id="token" value="{{csrf_token()}}">
                 </body>
                 <!-- /.theme-customizer -->
+                <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
                 <!-- core plugins -->
                 <script src="{{ asset('assets/vendor/bower_components/jquery/dist/jquery.min.js') }}">
                 </script>

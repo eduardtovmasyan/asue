@@ -3,7 +3,8 @@
 namespace App\Http\Controllers;
 
 use Contact;
-use Illuminate\Http\Request;
+use App\Http\Requests\StudentApplicationValidationRequest;
+use Illuminate\Support\Facades\Redirect;
 
 class ContactController extends Controller
 {
@@ -17,5 +18,10 @@ class ContactController extends Controller
     public function getDocTypes($document_id)
     {
         return Contact::getTypes($document_id);
+    }
+
+    public function saveStudentApplication(StudentApplicationValidationRequest $request)
+    {
+    	return Contact::save($request);
     }
 }

@@ -25,4 +25,5 @@ Route::group(['middleware' => ['auth']], function() {
     Route::get('/academic-info', 'AcademicInfoController@showAcademicInfoPage')->name('academic-info');
     Route::get('/contact', 'ContactController@showContactPage')->name('contact');
     Route::get('/document/{document_id}', 'ContactController@getDocTypes');
+    Route::post('/student-application/send', 'ContactController@saveStudentApplication');
 });
