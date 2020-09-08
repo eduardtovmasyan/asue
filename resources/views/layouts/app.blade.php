@@ -3,8 +3,9 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Home</title>
-    <meta name="description" content="Eduard">
+    <meta name="description" content="asue">
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <meta name="csrf-token" content="{{ csrf_token() }}" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- theme customizier \ demo only -->
     <link rel="stylesheet" href="{{ asset('assets/examples/css/theme-customizer.css') }}">
@@ -38,7 +39,7 @@
         <nav class="site-navbar navbar fixed-top navbar-expand-lg navbar-light bg-blue">
             <div class="navbar-header">
                 <a class="navbar-brand" href="{{ url('home') }}">
-                    <span class="brand-name hidden-fold">Luxury</span> </a>
+                    <span class="brand-name hidden-fold">A S U E</span> </a>
                     <button data-toggle="menubar" class="mr-auto hidden-lg-up hamburger hamburger--collapse js-hamburger is-active" type="button">
                     <span class="hamburger-box">
                         <span class="hamburger-inner">
@@ -406,6 +407,12 @@
                                             </a>
                                         </li>
                                         <li>
+                                            <a href="{{ url('contact') }}">
+                                                <i class="menu-icon fa fa-file"></i>
+                                                <span class="menu-text">Contact Us</span>
+                                            </a>
+                                        </li>
+                                        <li>
                                             <a href="javascript:void(0)" class="submenu-toggle">
                                                 <i class="menu-icon zmdi zmdi-pages zmdi-hc-lg">
                                                 </i> <span class="menu-text">Pages</span> <i class="menu-caret zmdi zmdi-hc-sm zmdi-chevron-right">
@@ -668,6 +675,7 @@
                         <!-- /.site-main -->
                     </div>
                     <!-- /.site-wrapper -->
+                    <input type="hidden" id="token" value="{{csrf_token()}}">
                 </body>
                 <!-- /.theme-customizer -->
                 <!-- core plugins -->
