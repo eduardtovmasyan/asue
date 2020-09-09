@@ -235,5 +235,6 @@ return [
         'Users' => App\Facades\LmsUser::class,
         'AcademicInfo' => App\Facades\AcademicInfo::class,
         'Contact' => App\Facades\Contact::class,
+        'Schedule' => App\Facades\Schedule::class,
     ],
 ];
