@@ -21,6 +21,11 @@ class Student extends Model
 
     public function studentCourse()
     {
-        return $this->hasOne(Course::class, 'stud_id', 'stud_id');
+        return $this->hasMany(Course::class, 'stud_id', 'stud_id');
+    }
+
+    public function studentSpeciality()
+    {
+        return $this->hasOne(Speciality::class, 'MasnagitutyunID', 'specialty');
     }
 }
