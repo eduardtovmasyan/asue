@@ -6,9 +6,9 @@ use AcademicInfo;
 
 class AcademicInfoController extends Controller
 {
-	public function showAcademicInfoPage()
+    public function showAcademicInfoPage()
     {
-    	$information = AcademicInfo::get();
+        $information = AcademicInfo::get();
 
         return view('academicInfo')->with('information', $information);
     }

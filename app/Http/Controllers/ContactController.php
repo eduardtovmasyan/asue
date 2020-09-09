@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use Contact;
 use App\Http\Requests\StudentApplicationValidationRequest;
-use Illuminate\Support\Facades\Redirect;
 
 class ContactController extends Controller
 {
@@ -22,6 +21,6 @@ class ContactController extends Controller
 
     public function saveStudentApplication(StudentApplicationValidationRequest $request)
     {
-    	return Contact::save($request);
+        return Contact::save($request);
     }
 }

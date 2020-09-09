@@ -41,10 +41,12 @@ class ContactService
     public function save($request)
     {
         $facultet_id = Auth::user()->information->facultet_id;
-        $staff = Staff::select('user_id')->where('status', 1)
-                        ->where('role_id', 7)
-                        ->where('position_id', $facultet_id)->first();
         $docType = DocumentType::findOrFail($request->docType_id);
+        
+        $staff = Staff::select('user_id')
+                    ->where('status', 1)
+                    ->where('role_id', 7)
+                    ->where('position_id', $facultet_id)->first();
 
         $application = StudentApplication::create([
             'document_type_id' => $request->docType_id,
