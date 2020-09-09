@@ -26,4 +26,5 @@ Route::group(['middleware' => ['auth']], function() {
     Route::get('/contact', 'ContactController@showContactPage')->name('contact');
     Route::get('/document/{document_id}', 'ContactController@getDocTypes');
     Route::post('/student-application/send', 'ContactController@saveStudentApplication');
+    Route::get('/schedule', 'ScheduleController');
 });

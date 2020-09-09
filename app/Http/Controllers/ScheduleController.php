@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Schedule;
 use Illuminate\Http\Request;
 
 class ScheduleController extends Controller
@@ -11,19 +12,8 @@ class ScheduleController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function __invoke()
     {
-        //
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $scheduleId
-     * @return \Illuminate\Http\Response
-     */
-    public function show($scheduleId)
-    {
-        //
+        return Schedule::get();
     }
 }

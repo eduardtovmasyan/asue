@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use Schedule;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -24,9 +23,6 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $schedule = Schedule::get();
-
-        return view('home')->with('days', parent::WEEK_DAYS)
-                ->with('schedule', $schedule);
+        return view('home')->with('days', parent::WEEK_DAYS);
     }
 }
