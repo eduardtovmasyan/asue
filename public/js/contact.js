@@ -50,6 +50,14 @@ $(document).on('click', '#sendButton', function() {
         success: function(r) {
             swal("Good job!", "You clicked the button!", "success");
             $(location).attr('href', '/home');
+        },
+        error: function(e){
+            if (e.responseJSON.errors.docType_id) {
+                $('#doc').css('border-color', 'red')
+            }
+            if (e.responseJSON.errors.description) {
+                $('#textarea').css('border-color', 'red')
+            }
         }
     });
 });

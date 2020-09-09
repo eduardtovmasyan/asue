@@ -15,7 +15,7 @@ class StudentApplicationValidationRequest extends FormRequest
     {
         return [
             'docType_id' => 'required|exists:lms_document_type,id',
-            'description' => 'required|min:20',
+            'description' => 'required|min:3',
         ];
     }
 }
