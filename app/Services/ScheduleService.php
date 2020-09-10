@@ -28,7 +28,7 @@ class ScheduleService
             $semestr = 2;
         }
 
-        $schedule = $this->scheduleModel::where('teach_year', 2019)
+        $schedule = $this->scheduleModel::where('teach_year', $currentYear)
             ->join('lms_subjects', 'ararka', '=', 'lms_subjects.id')
             ->where('specialty', $studentCourse->krt_cragir)
             ->where('course', $studentCourse->course)

@@ -7,9 +7,7 @@ $.ajax({
         '_token': token,
     },
     success: function(r) {
-        console.log(Object.entries(r))
         Object.entries(r).forEach(function(item) {
-            // console.log(item)
             $('tbody').append(`
                 <tr>
                     <th scope="row">${item[0]}</th>
