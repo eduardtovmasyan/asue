@@ -24,6 +24,10 @@ class NotificationService
             ->select('lms_notification.id', 'heading', 'text', 'name', 'lname')
             ->first();
 
+        $notification->update([
+            'status' => 1,
+        ]);
+        
         return $notification;
     }
 }
