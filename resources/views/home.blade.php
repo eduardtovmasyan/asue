@@ -13,17 +13,9 @@
         </tr>
     </thead>
     <tbody>
-        <tr>
-            <th scope="row">1</th>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td>5</td>
-        </tr>
     </tbody>
 </table>
 @endsection
 @section('js')
-<script src="{{ asset('js/schedule.js')}}" type="text/javascript"></script>
+<script src="{{ asset('js/schedule.js') }}" type="text/javascript"></script>
 @endsection

@@ -29,13 +29,15 @@ class ScheduleService
         }
 
         $schedule = $this->scheduleModel::where('teach_year', 2019)
+            ->join('lms_subjects', 'ararka', '=', 'lms_subjects.id')
             ->where('specialty', $studentCourse->krt_cragir)
             ->where('course', $studentCourse->course)
             ->where('xumb', $studentCourse->group)
             ->where('semestr', $semestr)
-            ->select('week_day', 'ararka', 'room', 'teach_time')
-            ->get();
+            ->select('week_day', 'ararka', 'room', 'teach_time', 'sbjname')
+            ->get()
+            ->groupBy('teach_time');
 
-        return $schedule; 
+        return $schedule;
     }
 }
