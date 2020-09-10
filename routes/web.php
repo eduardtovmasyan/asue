@@ -28,5 +28,5 @@ Route::group(['middleware' => ['auth']], function() {
     Route::post('/student-application/send', 'ContactController@saveStudentApplication');
     Route::get('/schedule', 'ScheduleController');
     Route::get('/notification', 'NotificationController@index');
-    Route::get('/notification/{notification_id}', 'NotificationController@index');
+    Route::get('/notification/{notification_id}', 'NotificationController@show');
 });

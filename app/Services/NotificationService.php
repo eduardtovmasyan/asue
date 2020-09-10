@@ -12,13 +12,18 @@ class NotificationService
         return Notification::where('to_uname', Auth::user()->information->stud_id)
             ->join('dec_ashxatakic', 'from', '=', 'dec_ashxatakic.user_id')
             ->where('lms_notification.status', 0)
-            ->select('lms_notification.id', 'heading', 'text', 'name', 'lname')
+            ->select('lms_notification.id', 'heading', 'name', 'lname')
             ->get();
     }
 
-    public function show()
+    public function show($notification_id)
     {
-        // return Notification::where('to_uname', Auth::user()->information->stud_id)
-        //     ->where('id', '0')->first();
+        $notification = Notification::where('to_uname', Auth::user()->information->stud_id)
+            ->join('dec_ashxatakic', 'from', '=', 'dec_ashxatakic.user_id')
+            ->where('lms_notification.id', $notification_id)
+            ->select('lms_notification.id', 'heading', 'text', 'name', 'lname')
+            ->first();
+
+        return $notification;
     }
 }

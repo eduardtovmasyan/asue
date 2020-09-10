@@ -15,4 +15,15 @@ class NotificationController extends Controller
     {
         return Notification::get();
     }
+
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $notification_id
+     * @return \Illuminate\Http\Response
+     */
+    public function show($notification_id)
+    {
+        return Notification::show($notification_id);
+    }
 }

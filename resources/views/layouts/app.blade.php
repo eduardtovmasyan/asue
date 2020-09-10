@@ -409,17 +409,18 @@
                         <div class="modal-content">
                             <div class="modal-body p-5">
                                 <div class="text-center">
-                                    <h4>Please Take This Survey</h4>
+                                    <h4 class="notificationSender"></h4>
                                 </div>
                                 <form action="" id="wizard-modal-form">
-                                    <div class="wizard p-4" id="modal-wizard" style="border-radius: 6px">
+                                    <div class="wizard" id="modal-wizard" style="border-radius: 6px">
                                         <div class="tab-content">
-                                            <div class="tab-pane p-5 active" id="ex2-step-1" role="tabpanel">
-                                                <div class="row"></div>
+                                            <div class="tab-pane p-3 active" id="ex2-step-1" role="tabpanel">
+                                                <h6 class="text-center mb-5 notificationHead"></h6>
+                                                <div class="row notificationBody"></div>
                                                 <!-- /.row -->
                                             </div>
                                             <!-- /.tab-pane -->
-                                            <div class="pager d-flex justify-content-between float-right">
+                                            <div class="pager d-flex justify-content-between float-right mt-5">
                                                 <button type="button" class="next btn btn-outline-success btn-rounded px-5" data-dismiss="modal">Close</button>
                                             </div>
                                             <!-- /.pager -->
