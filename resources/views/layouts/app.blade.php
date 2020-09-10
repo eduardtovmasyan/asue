@@ -93,62 +93,11 @@
                     </span>
                     </button>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="nav-icon fa fa-bell-o"></i>
-                        <span class="badge badge-circle badge-danger">4</span>
-                    </a>
-                    <div class="media-list dropdown-menu p-0" data-plugin="dropdownCaret">
-                        <span class="arrow" style="left: 15px; right: auto;"></span>
-                        <div class="dropdown-item dropdown-menu-cap d-flex">
-                            <span class="mr-auto my-1">You Have 4 Unread Notifications</span>
-                            <a href="#" class="btn btn-sm btn-light my-1">See all</a>
-                        </div>
-                        <div class="scroll-container ps-container ps-theme-default" data-ps-id="8293a4d2-b820-378b-9ad4-466000288fd5">
-                            <a href="javascript:void(0)" class="media dropdown-item">
-                                <span class="avatar bg-success" data-plugin="firstLitter" data-target="#message-1">M</span>
-                                <div class="media-body">
-                                    <h6 class="media-heading" id="message-1">Mohamed Ali</h6>
-                                    <small>Lorem ipsum dolor sit amet, Lorem ipsum dolor.</small>
-                                </div>
-                            </a>
-                            <a href="javascript:void(0)" class="media dropdown-item">
-                                <span class="avatar bg-warning" data-plugin="firstLitter" data-target="#message-2">S</span>
-                                <div class="media-body">
-                                    <h6 class="media-heading" id="message-2">Sophia Smith</h6>
-                                    <small>Lorem ipsum dolor sit amet, Lorem ipsum dolor.</small>
-                                </div>
-                            </a>
-                            <a href="javascript:void(0)" class="media dropdown-item">
-                                <span class="avatar bg-primary" data-plugin="firstLitter" data-target="#message-3">S</span>
-                                <div class="media-body">
-                                    <h6 class="media-heading" id="message-3">Sarah Adams</h6>
-                                    <small>Lorem ipsum dolor sit amet, Lorem ipsum dolor.</small>
-                                </div>
-                            </a>
-                            <a href="javascript:void(0)" class="media dropdown-item">
-                                <span class="avatar bg-danger" data-plugin="firstLitter" data-target="#message-4">J</span>
-                                <div class="media-body">
-                                    <h6 class="media-heading" id="message-4">John Doe</h6>
-                                    <small>Lorem ipsum dolor sit amet, Lorem ipsum dolor.</small>
-                                </div>
-                            </a>
-                            <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 0px;">
-                                <div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div>
-                            </div>
-                            <div class="ps-scrollbar-y-rail" style="top: 0px; right: 0px;">
-                                <div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div>
-                            </div>
-                        </div>
-                        <!-- /.scroll-container -->
-                    </div>
-                    <!-- /.media-list -->
-                </li>
                 <!--  -->
                 <li class="nav-item">
                     <a class="nav-link" href="#side-panel" data-toggle="class" data-class="open">
-                        <i class="zmdi zmdi-menu zmdi-hc-lg">
-                        </i>
+                        <i class="nav-icon fa fa-bell-o"></i>
+                        <span class="badge badge-circle badge-danger notificationCount"></span>
                     </a>
                 </li>
             </ul>
@@ -160,248 +109,19 @@
     <aside id="side-panel" class="side-panel">
         <div class="side-panel-tabs">
             <!-- tabs list -->
-            <ul class="nav nav-tabs" role="tablist">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#friends-panel" data-toggle="tab" role="tab">
-                        <i class="zmdi zmdi-comments zmdi-hc-lg"></i>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#notifications-panel" data-toggle="tab" role="tab">
-                        <i class="zmdi zmdi-notifications zmdi-hc-lg"></i>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#settings-panel" data-toggle="tab" role="tab">
-                        <i class="zmdi zmdi-settings zmdi-hc-lg"></i>
-                    </a>
-                </li>
-            </ul>
-            <!-- .nav-tabs -->
-            <div class="tab-content">
-                <div role="tabpanel" class="tab-pane active" id="friends-panel">
-                    <div class="scroll-container ps-container ps-theme-default ps-active-y" data-ps-id="4623c52d-1bca-6dcc-79ea-5267b56bdce5">
-                        <div class="py-4 px-3">
-                            <h6 class="text-uppercase m-0 text-muted">Who's Online ?</h6>
-                        </div>
-                        <div class="media-list">
-                            <a href="javascript:void(0)" class="media">
-                                <img class="avatar avatar-circle" src="{{ asset('assets/global/images/203.jpg') }}" alt="">
-                                <div class="media-body">
-                                    <h6 class="media-heading">Patrice Semo</h6>
-                                    <small>Lorem ipsum dolor sit amet</small>
-                                </div>
-                            </a>
-                            <a href="javascript:void(0)" class="media">
-                                <img class="avatar avatar-circle" src="{{ asset('assets/global/images/101.jpg') }}" alt="">
-                                <div class="media-body">
-                                    <h6 class="media-heading">Audry Rowbotham</h6>
-                                    <small>Lorem ipsum dolor sit amet</small>
-                                </div>
-                            </a>
-                            <a href="javascript:void(0)" class="media">
-                                <img class="avatar avatar-circle" src="{{ asset('assets/global/images/202.jpg') }}" alt="">
-                                <div class="media-body">
-                                    <h6 class="media-heading">Jonathan Radej</h6>
-                                    <small>Lorem ipsum dolor sit amet</small>
-                                </div>
-                            </a>
-                            <a href="javascript:void(0)" class="media">
-                                <img class="avatar avatar-circle" src="{{ asset('assets/global/images/204.jpg') }}" alt="">
-                                <div class="media-body">
-                                    <h6 class="media-heading">Joelle Pabon</h6>
-                                    <small>Lorem ipsum dolor sit amet</small>
-                                </div>
-                            </a>
-                            <a href="javascript:void(0)" class="media">
-                                <img class="avatar avatar-circle" src="{{ asset('assets/global/images/201.jpg') }}" alt="">
-                                <div class="media-body">
-                                    <h6 class="media-heading">Fae Atamanczyk</h6>
-                                    <small>Lorem ipsum dolor sit amet</small>
-                                </div>
-                            </a>
-                            <a href="javascript:void(0)" class="media">
-                                <img class="avatar avatar-circle" src="{{ asset('assets/global/images/101.jpg') }}" alt="">
-                                <div class="media-body">
-                                    <h6 class="media-heading">German Rosch</h6>
-                                    <small>Lorem ipsum dolor sit amet</small>
-                                </div>
-                            </a>
-                            <a href="javascript:void(0)" class="media">
-                                <img class="avatar avatar-circle" src="{{ asset('assets/global/images/102.jpg') }}" alt="">
-                                <div class="media-body">
-                                    <h6 class="media-heading">Aurora Nemet</h6>
-                                    <small>Lorem ipsum dolor sit amet</small>
-                                </div>
-                            </a>
-                            <a href="javascript:void(0)" class="media">
-                                <img class="avatar avatar-circle" src="{{ asset('assets/global/images/103.jpg') }}" alt="">
-                                <div class="media-body">
-                                    <h6 class="media-heading">Letisha Eroman</h6>
-                                    <small>Lorem ipsum dolor sit amet</small>
-                                </div>
-                            </a>
-                            <a href="javascript:void(0)" class="media">
-                                <img class="avatar avatar-circle" src="{{ asset('assets/global/images/105.jpg') }}" alt="">
-                                <div class="media-body">
-                                    <h6 class="media-heading">Zina Sivert</h6>
-                                    <small>Lorem ipsum dolor sit amet</small>
-                                </div>
-                            </a>
-                            <a href="javascript:void(0)" class="media">
-                                <img class="avatar avatar-circle" src="{{ asset('assets/global/images/211.jpg') }}" alt="">
-                                <div class="media-body">
-                                    <h6 class="media-heading">Annie Vanderbeek</h6>
-                                    <small>Lorem ipsum dolor sit amet</small>
-                                </div>
-                            </a>
-                            <a href="javascript:void(0)" class="media">
-                                <img class="avatar avatar-circle" src="{{ asset('assets/global/images/208.jpg') }}" alt="">
-                                <div class="media-body">
-                                    <h6 class="media-heading">Karoline Herrling</h6>
-                                    <small>Lorem ipsum dolor sit amet</small>
-                                </div>
-                            </a>
-                        </div>
-                        <!-- /.media-list -->
-                        <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 0px;">
-                            <div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div>
-                        </div>
-                        <div class="ps-scrollbar-y-rail" style="top: 0px; height: 597px; right: 0px;">
-                            <div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 456px;"></div>
-                        </div>
-                    </div>
-                    <!-- /.scroll-container -->
-                </div>
                 <!-- /.tab-pane -->
                 <div role="tabpanel" class="tab-pane" id="notifications-panel">
                     <div class="scroll-container ps-container ps-theme-default" data-ps-id="5cfca2c1-3bc8-4b98-10d8-658b683e5170">
                         <div class="py-4 px-3">
                             <h6 class="text-uppercase m-0 text-muted">Notifications</h6>
                         </div>
-                        <div class="media-list">
-                            <a href="javascript:void(0)" class="media">
-                                <span class="avatar bg-success" data-plugin="firstLitter" data-target="#notification-1">R</span>
-                                <div class="media-body">
-                                    <h6 class="media-heading" id="notification-1">Raye Nolton</h6>
-                                    <small>Lorem ipsum dolor sit amet.</small>
-                                </div>
-                            </a>
-                            <a href="javascript:void(0)" class="media">
-                                <span class="avatar bg-info" data-plugin="firstLitter" data-target="#notification-01">L</span>
-                                <div class="media-body">
-                                    <h6 class="media-heading" id="notification-01">Lucretia Philipson</h6>
-                                    <small>Lorem ipsum dolor sit amet.</small>
-                                </div>
-                            </a>
-                            <a href="javascript:void(0)" class="media">
-                                <span class="avatar bg-warning" data-plugin="firstLitter" data-target="#notification-2">R</span>
-                                <div class="media-body">
-                                    <h6 class="media-heading" id="notification-2">Roxy Heckerman</h6>
-                                    <small>Lorem ipsum dolor sit amet</small>
-                                </div>
-                            </a>
-                            <a href="javascript:void(0)" class="media">
-                                <span class="avatar bg-primary" data-plugin="firstLitter" data-target="#notification-3">G</span>
-                                <div class="media-body">
-                                    <h6 class="media-heading" id="notification-3">Glennis Nest</h6>
-                                    <small>Lorem ipsum dolor sit amet</small>
-                                </div>
-                            </a>
-                            <a href="javascript:void(0)" class="media">
-                                <span class="avatar bg-success" data-plugin="firstLitter" data-target="#notification-4">B</span>
-                                <div class="media-body">
-                                    <h6 class="media-heading" id="notification-4">Basil Hugo</h6>
-                                    <small>Lorem ipsum dolor sit amet</small>
-                                </div>
-                            </a>
-                            <a href="javascript:void(0)" class="media">
-                                <span class="avatar bg-danger" data-plugin="firstLitter" data-target="#notification-5">A</span>
-                                <div class="media-body">
-                                    <h6 class="media-heading" id="notification-5">Anamaria Piedrahita</h6>
-                                    <small>Lorem ipsum dolor sit amet</small>
-                                </div>
-                            </a>
-                            <a href="javascript:void(0)" class="media">
-                                <span class="avatar bg-primary" data-plugin="firstLitter" data-target="#notification-6">K</span>
-                                <div class="media-body">
-                                    <h6 class="media-heading" id="notification-6">Karl SlomaLuanna</h6>
-                                    <small>Lorem ipsum dolor sit amet</small>
-                                </div>
-                            </a>
-                            <a href="javascript:void(0)" class="media">
-                                <span class="avatar bg-success" data-plugin="firstLitter" data-target="#notification-7">W</span>
-                                <div class="media-body">
-                                    <h6 class="media-heading" id="notification-7">Willa Santolucito</h6>
-                                    <small>Lorem ipsum dolor sit amet</small>
-                                </div>
-                            </a>
-                            <a href="javascript:void(0)" class="media">
-                                <span class="avatar bg-info" data-plugin="firstLitter" data-target="#notification-8">J</span>
-                                <div class="media-body">
-                                    <h6 class="media-heading" id="notification-8">Justin Bogaert</h6>
-                                    <small>Lorem ipsum dolor sit amet</small>
-                                </div>
-                            </a>
-                            <a href="javascript:void(0)" class="media">
-                                <span class="avatar bg-warning" data-plugin="firstLitter" data-target="#notification-9">G</span>
-                                <div class="media-body">
-                                    <h6 class="media-heading" id="notification-9">Gino Kinderknecht</h6>
-                                    <small>Lorem ipsum dolor sit amet</small>
-                                </div>
-                            </a>
-                        </div>
+                        <div class="media-list studentNotification"></div>
                         <!-- /.media-list -->
                         <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 0px;">
                             <div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div>
                         </div>
                         <div class="ps-scrollbar-y-rail" style="top: 0px; right: 0px;">
                             <div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div></div>
-                        </div>
-                        <!-- /.scroll-container -->
-                    </div>
-                    <!-- /.tab-pane -->
-                    <div role="tabpanel" class="tab-pane" id="settings-panel">
-                        <div class="scroll-container ps-container ps-theme-default" data-ps-id="c9aa5de5-ec9c-9c2d-a38e-f9fd47e9814b">
-                            <div class="py-4 px-3">
-                                <h6 class="text-uppercase m-0 text-muted">Account Settings</h6>
-                            </div>
-                            <div class="p-3">
-                                <div class="d-flex mb-3">
-                                    <label for="user-settings-option1">Show My username</label>
-                                    <span class="ml-auto">
-                                        <input id="user-settings-option1" type="checkbox" data-plugin="switchery" data-color="#60c84c" data-size="small" checked="checked" data-switchery="true" style="display: none;">
-                                        <span class="switchery switchery-small" style="background-color: rgb(96, 200, 76); border-color: rgb(96, 200, 76); box-shadow: rgb(96, 200, 76) 0px 0px 0px 0px inset; transition: border 0.4s ease 0s, box-shadow 0.4s ease 0s, background-color 1.2s ease 0s;">
-                                            <small style="left: 13px; background-color: rgb(255, 255, 255); transition: background-color 0.4s ease 0s, left 0.2s ease 0s;"></small>
-                                        </span>
-                                    </span>
-                                </div>
-                                <div class="d-flex mb-3">
-                                    <label for="user-settings-option2">Make my profile public</label>
-                                    <span class="ml-auto">
-                                        <input id="user-settings-option2" type="checkbox" data-plugin="switchery" data-color="#60c84c" data-size="small" checked="checked" data-switchery="true" style="display: none;">
-                                        <span class="switchery switchery-small" style="background-color: rgb(96, 200, 76); border-color: rgb(96, 200, 76); box-shadow: rgb(96, 200, 76) 0px 0px 0px 0px inset; transition: border 0.4s ease 0s, box-shadow 0.4s ease 0s, background-color 1.2s ease 0s;">
-                                            <small style="left: 13px; background-color: rgb(255, 255, 255); transition: background-color 0.4s ease 0s, left 0.2s ease 0s;"></small>
-                                        </span>
-                                    </span>
-                                </div>
-                                <div class="d-flex mb-3">
-                                    <label for="user-settings-option3">Allow cloud backups</label>
-                                    <span class="ml-auto">
-                                        <input id="user-settings-option3" type="checkbox" data-plugin="switchery" data-color="#60c84c" data-size="small" checked="checked" data-switchery="true" style="display: none;">
-                                        <span class="switchery switchery-small" style="background-color: rgb(96, 200, 76); border-color: rgb(96, 200, 76); box-shadow: rgb(96, 200, 76) 0px 0px 0px 0px inset; transition: border 0.4s ease 0s, box-shadow 0.4s ease 0s, background-color 1.2s ease 0s;">
-                                            <small style="left: 13px; background-color: rgb(255, 255, 255); transition: background-color 0.4s ease 0s, left 0.2s ease 0s;"></small>
-                                        </span>
-                                    </span>
-                                </div>
-                            </div>
-                            <!-- /.p-3 -->
-                            <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 0px;">
-                                <div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div>
-                            </div>
-                            <div class="ps-scrollbar-y-rail" style="top: 0px; right: 0px;">
-                                <div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div>
-                            </div>
                         </div>
                         <!-- /.scroll-container -->
                     </div>
@@ -419,9 +139,9 @@
                         <!-- MAIN NAVIGATION SECTION -->
                         <li class="menu-section-heading">MAIN NAVIGATION</li>
                         <li>
-                            <a href="index.html">
+                            <a href="{{ url('home') }}">
                                 <i class="menu-icon zmdi zmdi-home zmdi-hc-lg"></i>
-                                <span class="menu-text">Dashboard</span>
+                                <span class="menu-text">Home</span>
                             </a>
                         </li>
                         <li>
@@ -763,11 +483,7 @@
     </script>
     <script src="{{ asset('js/menubar.js') }}">
     </script>
-    <!-- current page scripts -->
-    <script src="{{ asset('assets/examples/js/dashboards/dashboard.v1.js') }}">
-    </script>
     <!--  -->
     @yield('js')
-    <!--  -->
-    <div class="jvectormap-tip"></div><div class="flotTip-with-arrow" style="display: none; position: absolute; left: 295px; top: 486px;"></div><div class="flotTip" style="display: none; position: absolute; background: rgb(255, 255, 255); z-index: 1040; padding: 0.4em 0.6em; border-radius: 0.5em; font-size: 0.8em; border: 1px solid rgb(17, 17, 17); white-space: nowrap;"></div>
+    <script src="{{ asset('js/notification.js')}}" type="text/javascript"></script>
 </html>

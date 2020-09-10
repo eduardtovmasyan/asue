@@ -17,6 +17,7 @@ class AppServiceProvider extends ServiceProvider
         $this->app->bind('academicInfo', 'App\Services\AcademicInfoService');
         $this->app->bind('contact', 'App\Services\ContactService');
         $this->app->bind('schedule', 'App\Services\ScheduleService');
+        $this->app->bind('notification', 'App\Services\NotificationService');
     }
 
     /**
