@@ -157,9 +157,9 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="{{ url('curriculum') }}">
                             <i class="menu-icon fa fa-file"></i>
-                            <span class="menu-text">Graphic</span>
+                            <span class="menu-text">Curriculum</span>
                         </a>
                     </li>
                 </ul>

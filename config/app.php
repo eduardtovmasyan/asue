@@ -237,5 +237,6 @@ return [
         'Contact' => App\Facades\Contact::class,
         'Schedule' => App\Facades\Schedule::class,
         'Notification' => App\Facades\Notification::class,
+        'Curriculum' => App\Facades\Curriculum::class,
     ],
 ];
