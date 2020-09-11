@@ -1,0 +1,8 @@
+thead tr {
+    height: 300px;
+}
+
+.rotate {
+    padding: 150px 0;
+    transform: rotate(-90deg);
+}

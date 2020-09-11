@@ -30,3 +30,7 @@ Route::group(['middleware' => ['auth']], function() {
     Route::get('/notification', 'NotificationController@index');
     Route::get('/notification/{notification_id}', 'NotificationController@show');
 });
+
+Route::get('/test', function () {
+    return view('graphic');
+});

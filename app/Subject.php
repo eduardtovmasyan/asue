@@ -13,4 +13,9 @@ class Subject extends Model
     {
         return $this->belongsTo(Schedule::class, 'ararka', 'id');
     }
+
+    public function graphic()
+    {
+        return $this->belongsTo(GraphicLoadMain::class, 'subj_is', 'id');
+    }
 }

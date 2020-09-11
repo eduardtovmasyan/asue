@@ -17,7 +17,7 @@ class ScheduleService
     public function get()
     {
         $studentCourse = Auth::user()->information->studentCourse
-        	->where('status', 1)->first();
+            ->where('status', 1)->first();
         $currentYear = date('Y');
         $mounth = date('m');
         $semestr;
