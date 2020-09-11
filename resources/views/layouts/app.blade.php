@@ -151,15 +151,15 @@
                         </a>
                     </li>
                     <li>
-                        <a href="{{ url('contact') }}">
-                            <i class="menu-icon fa fa-file"></i>
-                            <span class="menu-text">Contact Us</span>
+                        <a href="{{ url('curriculum') }}">
+                            <i class="menu-icon fa fa-graduation-cap"></i>
+                            <span class="menu-text">Curriculum</span>
                         </a>
                     </li>
                     <li>
-                        <a href="{{ url('curriculum') }}">
+                        <a href="{{ url('contact') }}">
                             <i class="menu-icon fa fa-file"></i>
-                            <span class="menu-text">Curriculum</span>
+                            <span class="menu-text">Contact Us</span>
                         </a>
                     </li>
                 </ul>
@@ -171,10 +171,9 @@
         <main class="site-main">
             <div class="site-content">
                 <div class="mb-5 text-center">
-                    <h1>@yield('pageTitle')</h1>
+                    <h1 style="letter-spacing: 10px;">@yield('pageTitle')</h1>
                 </div>
                 @yield('content')
-                <!--  -->
                 <div class="modal fade wizard-modal" id="wizard-modal" tabindex="-1" role="dialog" aria-labelledby="image-gallery-modal" aria-hidden="true">
                     <div class="modal-dialog modal-md" role="document">
                         <div class="modal-content">
@@ -207,7 +206,6 @@
                     </div>
                     <!-- /.modal-dialog -->
                 </div>
-                <!--  -->
             </div>
             <!-- /.site-content -->
             <footer class="site-footer">
