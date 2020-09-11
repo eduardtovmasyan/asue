@@ -1,8 +1,10 @@
 @extends('layouts.app')
+
+@section('pageTitle')
+    ՈՒսումնական պլան
+@endsection
+
 @section('content')
-<div class="mb-5">
-    <h1>ՈՒսումնական պլան</h1>
-</div>
 <div class="row mb-5">
     <div class="col text-right">
         <div>Կրթական աստիճան՝</div>

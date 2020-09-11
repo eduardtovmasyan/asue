@@ -1,8 +1,10 @@
 @extends('layouts.app')
+
+@section('pageTitle')
+    Հետադարձ կապ
+@endsection
+
 @section('content')
-<div class="mb-5">
-    <h1>Հետադարձ կապ</h1>
-</div>
 <div class="form-group">
     <div class="doc" class="selects">
         <label for="doc">Փաստաթղթի տեսակ:</label>

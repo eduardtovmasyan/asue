@@ -170,6 +170,9 @@
         <!-- /.site-menubar -->
         <main class="site-main">
             <div class="site-content">
+                <div class="mb-5 text-center">
+                    <h1>@yield('pageTitle')</h1>
+                </div>
                 @yield('content')
                 <!--  -->
                 <div class="modal fade wizard-modal" id="wizard-modal" tabindex="-1" role="dialog" aria-labelledby="image-gallery-modal" aria-hidden="true">
