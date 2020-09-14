@@ -16,8 +16,8 @@
         <div>Հաստատման տարեթիվ՝</div>
     </div>
     <div class="col">
-        <div>Կրթական աստիճա</div>
-        <div>Ուսուցման ձև</div>
+        <div>Կրթական աստիճա teach_program</div>
+        <div>Ուսուցման ձև teach_type</div>
         <div>Մասնագիտությու</div>
         <div>Կրթական ծրագի</div>
         <div>Որակավորման անվանու</div>
@@ -99,12 +99,18 @@
         </tr>
     </thead>
     <tbody>
-        
+        <tr>
+            <th class="text-center table-dark" colspan="16" style="border: 1px solid #eee;padding: 0;">1</th>
+        </tr>
+        <tr>
+            <th class="table-light" colspan="16" style="border: 1px solid #eee;padding: 0;">Պարտադիր դասընթացներ</th>
+        </tr>
     </tbody>
 </table>
 @endsection
 
 @section('js')
+    <script src="{{ asset('js/curriculum.js') }}" type="text/javascript"></script>
 @endsection
 
 @section('css')

@@ -14,6 +14,7 @@ class CurriculumController extends Controller
 
     public function getCurriculum()
     {
-        return Curriculum::get();
+        return Curriculum::getCurriculum();
     }
 }
+ 
