@@ -1,8 +1,13 @@
 thead tr {
     height: 300px;
 }
+thead tr th{
+    border: 1px solid #eee;
+}
 
 .rotate {
     padding: 150px 0;
     transform: rotate(-90deg);
+    width: 5px;
+    font-size: 10px;
 }

@@ -31,3 +31,4 @@ Route::group(['middleware' => ['auth']], function() {
     Route::get('/notification/{notification_id}', 'NotificationController@show');
     Route::get('/curriculum', 'CurriculumController@showCurriculumPage');
 });
+    Route::get('/test', 'CurriculumController@getCurriculum');

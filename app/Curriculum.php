@@ -1,15 +1,13 @@
 <?php
 
-namespace App\Models;
+namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
 class Curriculum extends Model
 {
-    protected $table = 'dec_us_plans';
+    public $table = 'dec_us_plans';
     public $timestamps = false;
-    protected $primaryKey = null;
-    public $incrementing = false;
 
     public function graphic()
     {

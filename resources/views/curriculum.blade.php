@@ -28,11 +28,11 @@
 <table class="table table-hover">
     <thead>
         <tr>
-            <th>Հ․Հ․</th>
-            <th>Դասիչը</th>
-            <th>Դասընթացի անվանումը</th>
+            <th class="text-center" style="padding: 150px 0;">Հ․Հ․</th>
+            <th class="text-center" style="padding: 150px 0;">Դասիչը</th>
+            <th class="text-center" style="width: 40%; padding: 150px 0;">Դասընթացի անվանումը</th>
             <th>
-                <div class="rotate">
+                <div class="rotate text-center">
                     <strong>Ստուգարք</strong>
                 </div>
             </th>
@@ -99,6 +99,7 @@
         </tr>
     </thead>
     <tbody>
+        
     </tbody>
 </table>
 @endsection

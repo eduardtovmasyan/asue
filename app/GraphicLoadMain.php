@@ -23,4 +23,9 @@ class GraphicLoadMain extends Model
     {
         return $this->hasOne(Subject::class, 'id', 'subj_id');
     }
+
+    public function educationalOrientation()
+    {
+        return $this->hasOne(EducationalOrientation::class, 'id', 'krtamas');
+    }
 }

@@ -11,4 +11,9 @@ class CurriculumController extends Controller
     {
         return view('curriculum');
     }
+
+    public function getCurriculum()
+    {
+        return Curriculum::get();
+    }
 }
