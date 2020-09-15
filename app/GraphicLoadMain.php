@@ -11,7 +11,7 @@ class GraphicLoadMain extends Model
 
     public function curriculum()
     {
-        return $this->belongsTo(Curriculum::class, 'id', 'plan_id');
+        return $this->belongsTo(Curriculum::class, 'plan_id', 'id');
     }
 
     public function chair()
