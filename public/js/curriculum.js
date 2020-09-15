@@ -8,7 +8,8 @@ $.ajax({
     },
     success: function(r) {
         console.log(r)
-        $('tbody').append(`
+        r.forEach(function(item) {
+            $('tbody').append(`
                 <tr>
                     <td></td>
                     <td></td>
@@ -16,6 +17,7 @@ $.ajax({
                     <td></td>
                     <td></td>
                     <td></td>
+                    <td>${item.credit}</td>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -24,9 +26,9 @@ $.ajax({
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>${item.sljy}</td>
                 </tr>
             `)
+        })
     }
 });

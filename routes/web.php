@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::group(['middleware' => ['logouted']], function() {
-    Route::get('/','LoginController@showLoginPage');
+    Route::get('/','LoginController@showLoginPage')->name('login');
     Route::post('/sign-in','LoginController@signIn')->name('sign-in');
 });
 

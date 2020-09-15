@@ -11,6 +11,6 @@ class Curriculum extends Model
 
     public function graphic()
     {
-        return $this->hasOne(GraphicLoadMain::class, 'plan_id', 'id');
+        return $this->hasMany(GraphicLoadMain::class, 'plan_id', 'id');
     }
 }
