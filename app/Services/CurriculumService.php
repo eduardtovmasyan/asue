@@ -3,11 +3,7 @@
 namespace App\Services;
 
 use App\Curriculum;
-use App\Http\Resources\TestCollection;
-use App\Http\Resources\UserCollection;
-use App\User;
 use Illuminate\Support\Facades\Auth;
-use App\Http\Resources\Curriculum as CurriculumResource;
 use App\Http\Resources\GraphicLoadMain as GraphicLoadMainResource;
 
 class CurriculumService
