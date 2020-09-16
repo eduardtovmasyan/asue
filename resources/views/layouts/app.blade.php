@@ -133,7 +133,7 @@
     </aside>
     <!-- /.side-panel -->
     <div class="site-wrapper">
-        <aside class="site-menubar" style="height: 100vh">
+        <aside class="site-menubar" style="height: 100vh;">
             <div class="site-menubar-inner">
                 <ul class="site-menu">
                     <!-- MAIN NAVIGATION SECTION -->
@@ -168,7 +168,7 @@
             <!-- /.site-menubar-inner -->
         </aside>
         <!-- /.site-menubar -->
-        <main class="site-main">
+        <main class="site-main" style="overflow-y: scroll;height: 100vh">
             <div class="site-content">
                 <div class="mb-5 text-center">
                     <h1 style="letter-spacing: 10px;">@yield('pageTitle')</h1>

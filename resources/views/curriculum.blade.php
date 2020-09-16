@@ -73,22 +73,12 @@
             </th>
             <th>
                 <div class="rotate">
-                    <strong>Կուրսային աշխատանք</strong>
+                    <strong>Անհատական աշխատանք</strong>
                 </div>
             </th>
             <th>
                 <div class="rotate">
-                    <strong>Կուրսային նախագիծ</strong>
-                </div>
-            </th>
-            <th>
-                <div class="rotate">
-                    <strong>Հաշվեգրաֆիկական աշխատանք</strong>
-                </div>
-            </th>
-            <th>
-                <div class="rotate">
-                    <strong>Ստուգողական աշխատանք</strong>
+                    <strong>Գիտահետազոտական աշխատանք</strong>
                 </div>
             </th>
             <th>
