@@ -1,7 +1,5 @@
 <?php
 
-use App\Http\Resources\UserCollection;
-use App\User;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -32,12 +30,5 @@ Route::group(['middleware' => ['auth']], function() {
     Route::get('/notification', 'NotificationController@index');
     Route::get('/notification/{notification_id}', 'NotificationController@show');
     Route::get('/curriculum', 'CurriculumController@showCurriculumPage');
-});
-    Route::get('/test', 'CurriculumController@getCurriculum');
-
-
-Route::get('/testttttt', function () {
-//    dd(User::first());
-    return UserCollection::collection(User::all());
-    return new UserCollection(User::all());
+    Route::get('/get/curriculum', 'CurriculumController@getCurriculum');
 });

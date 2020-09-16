@@ -13,4 +13,9 @@ class Speciality extends Model
     {
         return $this->belongsTo(Student::class, 'specialty', 'MasnagitutyunID');
     }
+
+    public function course()
+    {
+        return $this->belongsTo(Course::class, 'st_group', 'MasnagitutyunID');
+    }
 }

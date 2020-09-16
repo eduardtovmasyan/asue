@@ -2,7 +2,7 @@ let token = $('#token').val()
 
 $.ajax({
     type: 'get',
-    url: '/test',
+    url: '/get/curriculum',
     header: {
         '_token': token,
     },

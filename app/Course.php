@@ -13,4 +13,9 @@ class Course extends Model
     {
         return $this->belongsTo(Student::class, 'stud_id', 'stud_id');
     }
+
+    public function speciality()
+    {
+        return $this->hasOne(Speciality::class, 'MasnagitutyunID', 'st_group');
+    }
 }

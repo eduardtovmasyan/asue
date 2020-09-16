@@ -10,19 +10,13 @@
         <div>Կրթական աստիճան՝</div>
         <div>Ուսուցման ձևը՝</div>
         <div>Մասնագիտություն՝</div>
-        <div>Կրթական ծրագիր՝</div>
         <div>Որակավորման անվանում՝</div>
-        <div>Ուսուցման նորմատիվային ժամկետ՝</div>
-        <div>Հաստատման տարեթիվ՝</div>
     </div>
     <div class="col">
-        <div>Կրթական աստիճա teach_program</div>
-        <div>Ուսուցման ձև teach_type</div>
-        <div>Մասնագիտությու</div>
-        <div>Կրթական ծրագի</div>
-        <div>Որակավորման անվանու</div>
-        <div>Ուսուցման նորմատիվային ժամկե</div>
-        <div>Հաստատման տարեթի</div>
+        <div>{{ $pageInfo['teachProgram'] }}</div>
+        <div>{{ $pageInfo['teachType'] }}</div>
+        <div>{{ $pageInfo['speciality'] }}</div>
+        <div>{{ $pageInfo['quality'] }}</div>
     </div>
 </div>
 <table class="table table-hover">
@@ -90,7 +84,10 @@
     </thead>
     <tbody>
         <tr>
-            <th class="text-center table-dark" colspan="16" style="border: 1px solid #eee;padding: 0;">1</th>
+            <th class="text-center table-dark" colspan="16" style="border: 1px solid #eee;padding: 0;">
+                {{ Auth::user()->information->studentCourse->where('status', 1)->first()->course }} կուրս 
+                {{ Auth::user()->information->studentCourse->where('status', 1)->first()->kisamyak }} կիսամըակ
+            </th>
         </tr>
         <tr>
             <th class="table-light" colspan="16" style="border: 1px solid #eee;padding: 0;">Պարտադիր դասընթացներ</th>
