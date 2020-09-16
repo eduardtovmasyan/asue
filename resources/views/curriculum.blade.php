@@ -22,7 +22,7 @@
 <table class="table table-hover">
     <thead>
         <tr>
-            <th class="text-center" style="padding: 150px 0;">Հ․Հ․</th>
+            <!-- <th class="text-center" style="padding: 150px 0;">Հ․Հ․</th> -->
             <th class="text-center" style="padding: 150px 0;">Դասիչը</th>
             <th class="text-center" style="width: 40%; padding: 150px 0;">Դասընթացի անվանումը</th>
             <th>
@@ -77,7 +77,7 @@
             </th>
             <th>
                 <div class="rotate">
-                    <strong>Լսարան․ ժամ / շաբաթական</strong>
+                    <strong>Լսարան․ ժամ/շաբաթական</strong>
                 </div>
             </th>
         </tr>
@@ -89,14 +89,12 @@
                 {{ Auth::user()->information->studentCourse->where('status', 1)->first()->kisamyak }} կիսամըակ
             </th>
         </tr>
-        <tr>
-            <th class="table-light" colspan="16" style="border: 1px solid #eee;padding: 0;">Պարտադիր դասընթացներ</th>
-        </tr>
     </tbody>
 </table>
 @endsection
 
 @section('js')
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/0.10.0/lodash.min.js"></script>
     <script src="{{ asset('js/curriculum.js') }}" type="text/javascript"></script>
 @endsection
 

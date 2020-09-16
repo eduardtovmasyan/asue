@@ -14,6 +14,7 @@ class GraphicLoadMain extends JsonResource
             'half_year' => $this->half_year,
             'type' => $this->type,
             'krtamas' => EducationalOrientation::make($this->educationalOrientation),
+            'krtamas_id' => $this->krtamas,
             'chair' => $this->ambion,
             'subject' => Subject::make($this->subject),
             'credit' => $this->credit,
