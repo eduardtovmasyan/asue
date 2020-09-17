@@ -83,12 +83,12 @@
         </tr>
     </thead>
     <tbody>
-        <tr>
+        <!-- <tr>
             <th class="text-center table-dark" colspan="16" style="border: 1px solid #eee;padding: 0;">
                 {{ Auth::user()->information->studentCourse->where('status', 1)->first()->course }} կուրս 
                 {{ Auth::user()->information->studentCourse->where('status', 1)->first()->kisamyak }} կիսամըակ
             </th>
-        </tr>
+        </tr> -->
     </tbody>
 </table>
 @endsection
