@@ -82,19 +82,11 @@
             </th>
         </tr>
     </thead>
-    <tbody>
-        <!-- <tr>
-            <th class="text-center table-dark" colspan="16" style="border: 1px solid #eee;padding: 0;">
-                {{ Auth::user()->information->studentCourse->where('status', 1)->first()->course }} կուրս 
-                {{ Auth::user()->information->studentCourse->where('status', 1)->first()->kisamyak }} կիսամըակ
-            </th>
-        </tr> -->
-    </tbody>
+    <tbody></tbody>
 </table>
 @endsection
 
 @section('js')
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/0.10.0/lodash.min.js"></script>
     <script src="{{ asset('js/curriculum.js') }}" type="text/javascript"></script>
 @endsection
 

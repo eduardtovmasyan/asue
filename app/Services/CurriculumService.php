@@ -35,8 +35,6 @@ class CurriculumService
 
     public function getCurriculum()
     {
-        $arr = [];
-
         $speciality = Auth::user()->information->studentCourse->where('status', 1)
             ->first()->krt_cragir;
         $dateEnter = Auth::user()->information->date_enter;
@@ -44,19 +42,6 @@ class CurriculumService
             ->where('confirm_date', $dateEnter)
             ->where('status', 1)->first();
 
-        $array = GraphicLoadMainResource::collection($curriculum->graphic)->groupBy('half_year');
-
-       
-        foreach ($array as $key => $value) {
-             $arr['halfYear'.$key] = $value;
-        }
-
-        // foreach ($arr as $key => $value) {
-        //     return $value;
-        // }
-
-        return $arr;
-
-        // return GraphicLoadMainResource::collection($curriculum->graphic)->groupBy('half_year');
+        return GraphicLoadMainResource::collection($curriculum->graphic)->groupBy('half_year');
     }
 }
