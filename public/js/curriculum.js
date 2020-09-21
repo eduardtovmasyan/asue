@@ -50,13 +50,13 @@ $.ajax({
                         </td>
                         <td>${item.s_all +  item.inqn_work}</td>
                         <td>${item.subject && item.credit ? item.credit : ''}</td>
-                        <td>${item.s1}</td>
-                        <td>${item.s2}</td>
-                        <td>${item.s3}</td>
-                        <td>${item.s_all}</td>
+                        <td>${item.s1 ? item.s1 : ''}</td>
+                        <td>${item.s2 ? item.s2 : ''}</td>
+                        <td>${item.s3 ? item.s3 : ''}</td>
+                        <td>${item.s_all ? item.s_all  : ''}</td>
                         <td>${item.subject && item.usm_1 > 0 ? item.usm_1 : ''}</td>
                         <td>${item.subject && item.usm_2 > 0 ? item.usm_2 : ''}</td>
-                        <td>${item.sljy}</td>
+                        <td>${item.sljy ? item.sljy : ''}</td>
                     `);
 
                     $('tbody').append(daser);
