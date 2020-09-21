@@ -18,9 +18,7 @@ class ContactService
      */
     public function index()
     {
-        $documents = Document::all();
-
-        return $documents;
+        return Document::all();
     }
 
     /**

@@ -1,9 +1,7 @@
 @extends('layouts.app')
-
 @section('pageTitle')
-    Հետադարձ կապ
+Հետադարձ կապ
 @endsection
-
 @section('content')
 <div class="form-group">
     <div class="doc" class="selects">

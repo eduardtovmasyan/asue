@@ -20,7 +20,8 @@ class LoginService
         $user = $this->userModel::where('email', $request->email)->first();
 
         if (isset($user)) {
-            if ($this->userModel->where('email', $request->email)->where('pass', '=', hash('sha256', $request->password))->first()) {
+            if ($this->userModel->where('email', $request->email)->where('pass', '=', hash('sha256', $request->password))->first())
+            {
                 Auth::login($user);
 
                 return true;

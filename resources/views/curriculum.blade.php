@@ -1,9 +1,7 @@
 @extends('layouts.app')
-
 @section('pageTitle')
-    ՈՒսումնական պլան
+ՈՒսումնական պլան
 @endsection
-
 @section('content')
 <div class="row mb-5">
     <div class="col text-right">
@@ -22,7 +20,6 @@
 <table class="table table-hover">
     <thead>
         <tr>
-            <!-- <th class="text-center" style="padding: 150px 0;">Հ․Հ․</th> -->
             <th class="text-center" style="padding: 150px 0;">Դասիչը</th>
             <th class="text-center" style="width: 40%; padding: 150px 0;">Դասընթացի անվանումը</th>
             <th>
@@ -82,14 +79,12 @@
             </th>
         </tr>
     </thead>
-    <tbody></tbody>
+<tbody></tbody>
 </table>
 @endsection
-
 @section('js')
-    <script src="{{ asset('js/curriculum.js') }}" type="text/javascript"></script>
+<script src="{{ asset('js/curriculum.js') }}" type="text/javascript"></script>
 @endsection
-
 @section('css')
-    <link rel="stylesheet" href="{{ asset('css/graphic.css') }}">
+<link rel="stylesheet" href="{{ asset('css/graphic.css') }}">
 @endsection

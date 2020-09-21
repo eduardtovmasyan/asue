@@ -1,9 +1,7 @@
 @extends('layouts.app')
-
 @section('pageTitle')
-    Անձնական Տվյալներ
+Անձնական Տվյալներ
 @endsection
-
 @section('content')
 <div class="profile-wrapper">
     <div class="profile-section-main">

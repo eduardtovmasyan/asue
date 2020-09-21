@@ -1,9 +1,7 @@
 @extends('layouts.app')
-
 @section('pageTitle')
-    Ակադեմիական Տեղեկատվություն
+Ակադեմիական Տեղեկատվություն
 @endsection
-
 @section('content')
 <table class="table table-hover">
     <thead>

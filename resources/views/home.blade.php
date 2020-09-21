@@ -1,9 +1,7 @@
 @extends('layouts.app')
-
 @section('pageTitle')
-    Դասացուցակ
+Դասացուցակ
 @endsection
-
 @section('content')
 <table class="table table-hover">
     <thead>
